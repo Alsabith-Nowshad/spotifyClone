@@ -9,15 +9,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    
 
     <!-- main div starts -->
     <div class="box w-full h-screen bg-black flex text-white">
         <!-- left full box -->
         <div class="box-left-full">
             <!-- left top -->
-            <div class="box-left-top  h-[20vh] w-[20vw] bg-[#121212] m-2 rounded-xl p-6">
+            <div class="box-left-top h-[20vh] w-[20vw] bg-[#121212] m-2 rounded-xl p-6 sm:w-[384px]  md: w-[384px] lg: w-[1384px]">
+
+
                 <div class="box-left-full-txt-1 flex">
-                <i class="fa-brands fa-spotify text-[30px]"></i>
+                <i class="fa-brands fa-spotify text-[30px]"></i> 
                 <h4 class="ml-2">Spotify </h4>
             </div>
             <div class="box-left-full-txt-2 flex mt-6">
@@ -33,7 +36,7 @@
 
                 <!-- left bottom -->
 
-            <div class="box-left-bottom  h-[65vh] w-[20vw] bg-[#121212] m-2 rounded-xl px-6 py-4">
+            <div class="box-left-bottom  h-[65vh] w-[20vw] bg-[#121212] m-2 rounded-xl px-6 py-4 sm:w-[384px]  md: w-[384px] lg: w-[384px]">
                 <div class="div-tp flex justify-between">
                     <div class="box-left-bottom-1 pl-1  flex">
                         <i class="fa-solid fa-swatchbook text-gray-500 text-[25px]"></i>
@@ -80,7 +83,7 @@
         </div>
         <div class="total-main h-full w-screen">
             <!-- right top -->
-            <div class="top-div flex bg-[#121212] h-[5vh] mt-2 rounded-tl-xl rounded-tr-xl justify-between">
+            <div class="top-div flex bg-[#121212] h-[5vh] w-[1520px] mt-2 rounded-tl-xl rounded-tr-xl justify-between sm:w-[520px] md:w-[720px] lg:w-[980px] xl:w-[1520px] ">
                 <div class="arrow flex ml-2  p-4">
                     <i class="fa-sharp fa-solid fa-chevron-left mr-3"></i>
                     <i class="fa-sharp fa-solid fa-chevron-right"></i>
@@ -92,9 +95,9 @@
                 <!-- right top  ends -->
             </div>
             <!-- right down div -->
-            <div class="right-down bg-[#1c1c1c] h-[81vh] w-[79.1vw] rounded-bl-xl rounded-br-xl ">
+            <div class="right-down bg-[#1c1c1c] h-[81vh] w-[79.1vw] rounded-bl-xl rounded-br-xl overflow-auto sm:w-[620px] md:w-[920px] lg:w-[1120px] xl:w-[1520px]">
                     <!-- popular text -->
-                <div class="down-top-right-text flex justify-between">
+                <div class="down-top-right-text flex justify-between         ">
                             <div class="popular pt-5 pl-7">
                                 <h1 class="font-bold ">Popular arists</h1>
                             </div>
@@ -104,9 +107,9 @@
                             <!-- popular text ends -->
                     </div>
                     <!-- popular songs -->
-                <div class="popularSongs flex my-3 mx-12 gap-9">
-                    <div class="pplr-1">
-                        <img class="h-[210px] w-[210px] rounded-full " src="assets/img1.jpg" alt="">
+                <div class="popularSongs grid grid-cols-6 my-3 mx-12 gap-9 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
+                    <div class="pplr-1 ">
+                        <img class="h-[210px] rounded-full sm:h-[60] rounded-full md:h-[60] rounded-full lg:h-[160] rounded-full" src="assets/img1.jpg" alt="">
                         <h1 class="font-bold">Pritam</h1>
                         <h1 class="text-[15px] text-gray-400">Artist</h1>
                     </div>
@@ -137,6 +140,49 @@
                     </div>
                     
                 </div>
+                 <!-- popular text -->
+                 <div class="down-top-right-text flex justify-between mt-11">
+                    <div class="popular pt-5 pl-7">
+                        <h1 class="font-bold ">Popular Albums</h1>
+                    </div>
+                    <div class="showAll  pt-5 pr-7">
+                        <h1>Show all</h1>
+                    </div>
+                    <!-- popular text ends -->
+                     
+            </div>
+            <div class="popularSongs grid grid-cols-6  flex my-3 mx-12 gap-9 xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
+                <div class="pplr-1">
+                    <img class="h-[210px] w-[210px] rounded-xl mb-3" src="assets/sng1.jpg" alt="">
+                    <h1 class="font-bold">Pritam</h1>
+                    <h1 class="text-[15px] text-gray-400">Badshah</h1>
+                </div>
+                <div class="pplr-2">
+                    <img class="h-[210px] w-[210px] rounded-xl contain object-cover  mb-3" src="assets/sng2.jpg" alt="">
+                    <h1 class="font-bold">Sachin-Jigar</h1>
+                    <h1 class="text-[15px] text-gray-400">Manan Bhardwaj, Vishal Mishra, Jaani</h1>
+                </div>
+                <div class="pplr-3">
+                    <img class="h-[210px] w-[210px] rounded-xl object-cover  mb-3" src="assets/sng3.jpg" alt="">
+                    <h1 class="font-bold">Anirudh Ravichander</h1>
+                    <h1 class="text-[15px] text-gray-400">leftovermax</h1>
+                </div>
+                <div class="pplr-4">
+                    <img class="h-[210px] w-[210px] rounded-xl object-cover  mb-3" src="assets/sng4.jpg" alt="">
+                    <h1 class="font-bold">Vishal Mishra</h1>
+                    <h1 class="text-[15px] text-gray-400">mithoon, Ankit Tiwari, Jeet Gannguli</h1>
+                </div>
+                <div class="pplr-5">
+                    <img class="h-[210px] w-[210px] rounded-xl object-cover  mb-3" src="assets/sng5.jpg" alt="">
+                    <h1 class="font-bold">A.R Rahman</h1>
+                    <h1 class="text-[15px] text-gray-400">Sidhu Moosa Wala</h1>
+                </div>
+                <div class="pplr-6">
+                    <img class="h-[210px] w-[210px] rounded-xl object-cover  mb-3" src="assets/sng6.jpg" alt="">
+                    <h1 class="font-bold">Arjit Singh</h1>
+                    <h1 class="text-[15px] text-gray-400">Ram Sampath, Arjit Singh, <br> Prashant Pandey</h1>
+                </div>
+                
             </div>
         </div>
 <!-- main div end -->
